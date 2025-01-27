@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenAlgo - Broker Setup</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            plugins: [require('daisyui')],
+            daisyui: {
+                themes: ["light", "dark"], // Optional: Specify themes
+            },
+        }
+    </script>
+</head>
+<body class="min-h-screen flex items-center justify-center bg-gradient-to-br from-green-100 to-blue-100">
+    <form action="/broker-setup" method="post" class="card bg-white shadow-xl p-8 rounded-lg w-full max-w-sm">
+        <h2 class="text-2xl font-bold text-center mb-6">Broker API Configuration</h2>
+        <p class="text-sm text-gray-600 text-center mb-6">
+            Enter your broker API credentials to set up your account.
+        </p>
+        <div class="form-control mb-4">
+            <label class="label" for="api_key">
+                <span class="label-text font-medium">API Key</span>
+            </label>
+            <input type="text" id="api_key" name="api_key" class="input input-bordered w-full" placeholder="Enter your API key" required>
+        </div>
+        <div class="form-control mb-6">
+            <label class="label" for="api_secret">
+                <span class="label-text font-medium">API Secret</span>
+            </label>
+            <input type="text" id="api_secret" name="api_secret" class="input input-bordered w-full" placeholder="Enter your API secret" required>
+        </div>
+        <button type="submit" class="btn btn-primary w-full">Save Configuration</button>
+        <div class="mt-4 text-center">
+            <a href="/dashboard" class="link link-primary">Go back to Dashboard</a>
+        </div>
+    </form>
+</body>
+</html>

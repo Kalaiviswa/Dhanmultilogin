@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>OpenAlgo - Dashboard</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@1.17.1/dist/full.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-100">
+    <div class="min-h-screen flex flex-col">
+        <!-- Header -->
+        <div class="bg-white shadow-md p-6 mb-6">
+            <h1 class="text-4xl font-semibold text-gray-800">Dashboard</h1>
+            <p class="mt-2 text-gray-600">Welcome to your dashboard! Here you can manage your broker settings and view
+                statistics.</p>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 p-6 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+            <!-- Card 1 -->
+            <div class="card bg-white shadow-lg p-6 rounded-lg">
+                <h2 class="text-xl font-semibold text-gray-800">Broker Settings</h2>
+                <p class="mt-2 text-gray-600">Manage your broker configuration and preferences.</p>
+                <button class="btn btn-primary mt-4">Manage Settings</button>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card bg-white shadow-lg p-6 rounded-lg">
+                <h2 class="text-xl font-semibold text-gray-800">Statistics</h2>
+                <p class="mt-2 text-gray-600">View detailed statistics on your performance.</p>
+                <button class="btn btn-secondary mt-4">View Statistics</button>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card bg-white shadow-lg p-6 rounded-lg">
+                <h2 class="text-xl font-semibold text-gray-800">Settings</h2>
+                <p class="mt-2 text-gray-600">Update your account and dashboard settings.</p>
+                <button class="btn btn-accent mt-4">Edit Settings</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
