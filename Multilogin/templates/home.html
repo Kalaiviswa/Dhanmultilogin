@@ -3,17 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DhanAlgo - Home</title>
+    <title>DHAN - Algo Trading Platform</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            plugins: [require('daisyui')],
+            daisyui: {
+                themes: ["business", "light"], // Customize your themes
+            },
+        }
+    </script>
 </head>
-<body class="min-h-screen flex items-center justify-center bg-gradient-to-r from-blue-100 to-purple-100">
-    <div class="bg-white shadow-lg rounded-2xl p-8 text-center">
-        <h1 class="text-4xl font-bold text-gray-800">Welcome to DhanAlgoPlatform</h1>
-        <p class="mt-4 text-gray-600">Your gateway to the world of algorithms</p>
-        <div class="mt-6 flex justify-center gap-4">
-            <a href="/login" class="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg shadow hover:bg-blue-700 transition">Login</a>
-            <a href="/register" class="px-6 py-3 bg-gray-200 text-gray-800 font-semibold rounded-lg shadow hover:bg-gray-300 transition">Register</a>
+<body class="bg-gradient-to-b from-gray-50 to-blue-100 text-gray-800">
+
+    <!-- Header -->
+    <header class="bg-blue-600 text-white py-12">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Welcome to DHAN</h1>
+            <p class="text-lg">Your gateway to smarter, automated investing and trading solutions.</p>
         </div>
-    </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="py-12 px-6 max-w-5xl mx-auto">
+        <!-- Platform Features Section -->
+        <section id="platform-features" class="mb-12">
+            <h2 class="text-3xl font-bold text-center mb-6">Smarter Investing with Algo Trading</h2>
+            <p class="text-center text-gray-700 mb-8">DHAN empowers traders and investors with cutting-edge tools for seamless algo trading. Whether you are new to trading or an experienced professional, our platform provides everything you need to enhance your strategies and achieve your financial goals.</p>
+            <ul class="space-y-4">
+                <li class="flex items-start">
+                    <span class="text-2xl mr-3">🤖</span>
+                    <span><strong>Algo Trading Made Easy</strong>: Create, test, and execute trading strategies automatically.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-2xl mr-3">🔍</span>
+                    <span><strong>Live Market Data</strong>: Make informed decisions with real-time insights and analytics.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-2xl mr-3">⚡</span>
+                    <span><strong>Integrated Broker Support</strong>: Connect effortlessly with leading brokers and APIs.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-2xl mr-3">📊</span>
+                    <span><strong>Advanced Visualization</strong>: Customize dashboards to track your performance in real-time.</span>
+                </li>
+                <li class="flex items-start">
+                    <span class="text-2xl mr-3">🔒</span>
+                    <span><strong>Robust Security</strong>: Enjoy secure transactions and data protection at every level.</span>
+                </li>
+            </ul>
+            <p class="mt-6 text-center text-gray-700">Join a community of forward-thinking traders and investors leveraging the power of algo trading.</p>
+        </section>
+
+        <!-- Call-to-Action Section -->
+        <section id="cta" class="bg-blue-100 p-8 rounded-lg shadow-md text-center">
+            <h3 class="text-2xl font-bold mb-4">Take the First Step in Algo Trading</h3>
+            <p class="mb-6">Create an account and explore the future of automated trading with DHAN today.</p>
+            <div class="flex justify-center space-x-4">
+                <a href="/register" class="btn btn-primary">Sign Up</a>
+                <a href="/login" class="btn btn-secondary">Log In</a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6 text-center">
+        <p>© 2025 DHAN. All rights reserved.</p>
+    </footer>
+
 </body>
 </html>
